@@ -9,6 +9,6 @@
 
 class Hello extends CI_Controller {
     public function one(){
-        echo "this one name.";
+        echo "it is codeigniter.";
     }
 }
