@@ -1,4 +1,4 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
  * Created by JetBrains PhpStorm.
  * User: Munkh
@@ -8,7 +8,18 @@
  */
 
 class Hello extends CI_Controller {
-    public function one(){
-        echo "it is codeigniter.";
+
+    public function index(){
+        echo " this is my index function";
+    }
+
+    public function one($name){
+        $this->load->view("header");
+        $data =array("name" => $name);
+        $this->load->view("one",$data);
+    }
+
+    public function two(){
+        echo " two function";
     }
 }
