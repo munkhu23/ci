@@ -38,7 +38,8 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "ctrl_menu";
+$route['product/(:any)'] = "catalog/product_lookup";
 $route['404_override'] = '';
 
 /* End of file routes.php */

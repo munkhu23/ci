@@ -7,5 +7,7 @@
  * To change this template use File | Settings | File Templates.
  */
 ?>
+
 <h1>This is the one</h1>
 hello <?php echo $name;?>
+

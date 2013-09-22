@@ -9,8 +9,11 @@
 <div id="container">
     <?php
         foreach($query as $row) {
-            echo $row->mac_id;
+            echo $row->mac_id."="; echo $row->floor;
         }
+        echo "---------------------------------------";
+
+
     ?>
 </div>
 

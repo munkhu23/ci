@@ -13,7 +13,7 @@ class Hello extends CI_Controller {
         echo " this is my index function";
     }
 
-    public function one($name){
+    public function one($name="bat"){
         $this->load->view("header");
         $data =array("name" => $name);
         $this->load->view("one",$data);
